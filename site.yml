@@ -1,0 +1,7 @@
+---
+- hosts: myhost
+  gather_facts: no
+  tasks:
+  - command: echo foo
+    remote_user: task-user
+    delegate_to: github.com
